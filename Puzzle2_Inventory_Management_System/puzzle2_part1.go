@@ -58,8 +58,6 @@ func puzzle2() {
 	match := 0
 	a := make([]string, 0)
 
-	//line, err := readbuff.ReadSlice('\n')
-	//	freq := 0
 	for readbuff.Scan() {
 		stemp := string(readbuff.Text())
 		a = append(a, stemp)
@@ -67,8 +65,7 @@ func puzzle2() {
 	//	fmt.Println(a)
 	position := 0
 	testing := 0
-	//	mistakes := 2
-	//sslice := ""
+
 	for match == 0 {
 		for i := 1; i < len(a)-1; i++ {
 			//	b := string(a[i])
